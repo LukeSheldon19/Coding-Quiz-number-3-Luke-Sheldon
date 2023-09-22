@@ -1,0 +1,33 @@
+class Result {
+
+    /*
+     * Complete the 'hackerrankInString' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts STRING s as parameter.
+     */
+
+    public static String hackerrankInString(String s) {
+        return hackerrankInString(s,0,0);
+    }
+    
+
+    private static String hackerrankInString(String s, int sIndex, int tIndex) {
+        
+        String target = "hackerrank";
+        
+        if (tIndex == target.length()) {
+            return "YES";
+        }
+
+        if (sIndex == s.length()) {
+            return "NO";
+        }
+
+        if (s.charAt(sIndex) == target.charAt(tIndex)) {
+            return hackerrankInString(s, sIndex + 1, tIndex + 1);
+        }
+
+        return hackerrankInString(s, sIndex + 1, tIndex);
+    }
+}
