@@ -1,1 +1,3 @@
-# Coding-Quiz-number-3-Luke-Sheldon
+Time Complexity of Mini-MAx Sum is O(n). This is because a single for loop is used, and we use this for loop to iterate over an array that is of varying size. Because of this we can say the loop will run n times. This is the most complex part of the code, so we say that this is the ceiling or O(n) in other words.
+
+Time Complexity of HackerRank in a String is O(n). The time complexity of this problem is similar to the first, but instead of an array we recursively iterate over a String which in and of itself is a collection of characters similar to an array. In a similar way to the first we know that the string can be of varying sizes, meaning that the most time consuming part of our code is recursiveky iterating over a string of length n. Because of this we can say that the time complexity is O(n).
